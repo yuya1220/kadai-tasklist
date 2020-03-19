@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   get 'sessions/new'
-  get 'sessions/create'
+  post 'sessions/create'
   delete 'sessions/destroy'
-  post 'users/create'
-  get 'users/new'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "tasks#index"
   
